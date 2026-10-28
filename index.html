@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AI Toolbox – Find the right AI tool for anything</title>
+  <meta name="description" content="A curated directory of 880+ AI tools for chat, images, video, voice, coding, marketing and more. Free and paid, all in one place.">
+  <meta name="author" content="darkwebnew">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0e1a" media="(prefers-color-scheme: dark)">
+  <link rel="me" href="https://github.com/darkwebnew">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧰</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#directory">Skip to tools</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="AI Toolbox home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.2L21 9.3l-5 4.3 1.6 6.4L12 16.6 6.4 20l1.6-6.4-5-4.3 6.6-1.1z"/></svg>
+        </span>
+        AI Toolbox
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#popular">Popular</a>
+        <a href="#categories">Categories</a>
+        <a href="#directory">All tools</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="icon-btn" href="https://github.com/darkwebnew" target="_blank" rel="noopener me" aria-label="View on GitHub" title="View on GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <button class="icon-btn saved-btn" id="saved-toggle" aria-pressed="false" title="Show saved tools">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-9.3-9.2C1.5 8 3.6 4.5 7.1 4.5c2 0 3.4 1.1 4.9 2.9 1.5-1.8 2.9-2.9 4.9-2.9 3.5 0 5.6 3.5 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"/></svg>
+          <span class="saved-label">Saved</span>
+          <span class="count" id="saved-count">0</span>
+        </button>
+        <button class="icon-btn" id="theme-toggle" aria-label="Switch light or dark theme">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M1.5 12h3M19.5 12h3M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="pill"><span class="dot"></span><span id="hero-total">880+</span> tools, updated for 2026</p>
+        <h1>Find the right AI tool for anything.</h1>
+        <p class="hero-sub">A hand-sorted directory of AI tools for writing, images, video, coding, marketing and more. Free and paid, all in one place.</p>
+
+        <form class="hero-search" id="hero-form" role="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label class="sr-only" for="hero-q">Search AI tools</label>
+          <input id="hero-q" type="search" placeholder="Search tools, like “logo” or “video”" autocomplete="off">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="quick" aria-label="Popular searches">
+          <span>Popular:</span>
+          <button type="button" data-q="video">Video</button>
+          <button type="button" data-q="logo">Logo</button>
+          <button type="button" data-q="email">Email</button>
+          <button type="button" data-q="voice">Voice</button>
+          <button type="button" data-q="resume">Resume</button>
+          <button type="button" data-q="website">Website</button>
+        </div>
+
+        <dl class="stats">
+          <div><dt>Tools</dt><dd id="stat-tools">0</dd></div>
+          <div><dt>Categories</dt><dd id="stat-cats">0</dd></div>
+          <div><dt>Free to start</dt><dd id="stat-free">0</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="popular">
+      <div class="wrap">
+        <div class="section-head">
+          <div><h2>Popular picks</h2><p>The tools most people start with.</p></div>
+        </div>
+        <div class="popular-grid" id="popular-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="wrap">
+        <div class="section-head">
+          <div><h2>Browse by category</h2><p>Pick what you’re working on.</p></div>
+        </div>
+        <div class="cat-grid" id="cat-grid"></div>
+      </div>
+    </section>
+
+    <section class="section directory" id="directory">
+      <div class="wrap">
+        <div class="section-head">
+          <div><h2 id="dir-title">All tools</h2><p id="dir-sub">Showing all tools</p></div>
+        </div>
+
+        <div class="toolbar" id="toolbar">
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span class="sr-only">Search tools</span>
+            <input id="q" type="search" placeholder="Search tools" autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <label class="select"><span class="sr-only">Category</span><select id="cat-select"></select></label>
+          <label class="select select-sort">
+            <span class="sr-only">Sort</span>
+            <select id="sort">
+              <option value="rec">Recommended</option>
+              <option value="az">Name A–Z</option>
+            </select>
+          </label>
+          <div class="segmented" id="prices" role="group" aria-label="Price"></div>
+        </div>
+
+        <div class="active-filters" id="active-filters"></div>
+        <div class="tool-grid" id="tool-grid"></div>
+
+        <div class="empty" id="empty" hidden>
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3>No tools found</h3>
+          <p id="empty-text">Try a different word or clear your filters.</p>
+          <button class="btn btn-ghost" id="clear-all" type="button">Clear filters</button>
+        </div>
+
+        <div class="more">
+          <button class="btn btn-ghost" id="show-more" type="button" hidden>Show more tools</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Can’t find what you need?</h2>
+            <p>Over 10,000 AI tools exist. These directories track the newest and most niche ones.</p>
+          </div>
+          <div class="cta-links">
+            <a class="btn btn-light" href="https://theresanaiforthat.com/" target="_blank" rel="noopener noreferrer">There’s An AI For That</a>
+            <a class="btn btn-outline-light" href="https://www.aixploria.com/en/" target="_blank" rel="noopener noreferrer">AIxploria</a>
+            <a class="btn btn-outline-light" href="https://www.futurepedia.io/" target="_blank" rel="noopener noreferrer">Futurepedia</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 6.2L21 9.3l-5 4.3 1.6 6.4L12 16.6 6.4 20l1.6-6.4-5-4.3 6.6-1.1z"/></svg></span>
+          AI Toolbox
+        </a>
+        <p>A curated list of AI tools. Prices and features change often, so check each site before you sign up.</p>
+      </div>
+      <p class="footer-note">
+        Logos belong to their owners. Built with HTML, CSS and JavaScript by
+        <a class="gh-link" href="https://github.com/darkwebnew" target="_blank" rel="noopener me" aria-label="darkwebnew on GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          @darkwebnew
+        </a>.
+      </p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg>
+  </button>
+
+  <script src="tools.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
