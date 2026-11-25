@@ -246,6 +246,7 @@ const TOOLS = [
   t("Relume", "https://www.relume.io/", "Sitemaps and wireframes", "design", "freemium"),
   t("Uizard", "https://uizard.io/", "UI design from prompts", "design", "freemium"),
   t("Visily", "https://www.visily.ai/", "Wireframes and mockups", "design", "freemium"),
+  t("Kite", "https://kite.new/", "Design canvas your AI agents draw on via MCP", "design", "freemium"),
   t("Dora", "https://www.dora.run/", "AI website builder", "apps", "freemium"),
   t("Microsoft Designer", "https://designer.microsoft.com/", "Quick social designs", "design", "freemium"),
   t("Adobe Express", "https://new.express.adobe.com/", "Templates and quick design", "design", "freemium"),
